@@ -1,5 +1,6 @@
 ```
-nasm -f elf64 -g -felf64 00.s -o program.o
+# the -g -f elf64 configures debug symbols
+nasm -g -f elf64 00.s -o program.o
 ld program.o -o program
 gdb ./program
 ```
